@@ -6,15 +6,13 @@
 
 ## Installation
 
-Add karpathy-guidelines to the `plugin` array in your `opencode.json` (global or project-level):
+Just run the following command in your terminal:
 
-```json
-{
-  "plugin": ["karpathy-guidelines@git+https://github.com/forrestchang/andrej-karpathy-skills.git"]
-}
+```bash
+ npm install karpathy-guidelines@git+https://github.com/forrestchang/andrej-karpathy-skills.git --prefix ~/.config/opencode
 ```
 
-Restart OpenCode. That's it — the plugin auto-installs and registers the skill.
+NOT NEED to estart OpenCode. That's it — the plugin auto-installs and registers the skill.
 
 Verify by asking: "use skill tool to list skills"
 
@@ -45,15 +43,15 @@ This plugin:
 
 ## Updating
 
-Karpathy Guidelines updates automatically when you restart OpenCode (if using Git URL).
+Updating
 
-To pin a specific version:
+To update to the latest version, simply re-run the installation command:
 
-```json
-{
-  "plugin": ["karpathy-guidelines@git+https://github.com/forrestchang/andrej-karpathy-skills.git#v1.0.0"]
-}
+```bash
+npm install karpathy-guidelines@git+https://github.com/forrestchang/andrej-karpathy-skills.git --prefix ~/.config/opencode
 ```
+
+The plugin will be updated to the latest commit. No need to modify opencode.json or restart OpenCode.
 
 ## Tool Mapping
 
